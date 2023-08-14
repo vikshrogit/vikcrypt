@@ -1,0 +1,33 @@
+{
+  "name": "vikshrogit/vikcrypt",
+  "version": "1.0",
+  "description": "VIKSHRO Cryption Algorithms Highly Crypting your Data and Also have VWT Auth System",
+  "license": "proprietary",
+  "source": {
+    "url": "vikshro.in/VWT",
+    "type": "website",
+    "reference": "VIKSHRO Home"
+  },
+  "authors": [
+    {
+      "name": "VIKSHRO",
+      "email": "security@vikshro.in"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "VIKSHRO\\VIKCRYPT\\": "src/"
+    }
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true,
+  "require": {
+    "vlucas/phpdotenv": "^5.5",
+    "kelvinmo/fernet-php": "^1.0"
+  },
+  "config": {
+    "platform": {
+      "php": "8.0"
+    }
+  }
+}
