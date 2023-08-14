@@ -18,7 +18,7 @@ class VIKCRYPT{
         if(file_exists(__DIR__.'/License/License')){
             $this->license = json_decode(file_get_contents(__DIR__.'/License/License'))->License;
         }else{
-            $this->license = License::getNewLicense();
+            $this->license = License::getNewLicense(host: APP::url());
             $lData = '{"License":"'.$this->license.'","Created_at":"'.date("Y-m-d h:i:sa").'"}';
             if(!is_dir(__DIR__.'/License')){
                 mkdir(__DIR__.'/License');
