@@ -1,12 +1,13 @@
 {
   "name": "vikshrogit/vikcrypt",
-  "version": "1.0",
+  "version": "1.0.1",
   "description": "VIKSHRO Cryption Algorithms Highly Crypting your Data and Also have VWT Auth System",
+  "keywords": ["vikshro","frameworks","security","vikcrypt","crypto","encryption","decryption","authentication","vwt","vikcrpyto web tokens"],
   "license": "proprietary",
   "source": {
-    "url": "vikshro.in/VWT",
+    "url": "https://vikshro.in/VWT",
     "type": "website",
-    "reference": "VIKSHRO Home"
+    "reference": "VIKSHRO"
   },
   "authors": [
     {

@@ -10,15 +10,17 @@ class VIKCRYPT{
 
     private string $key='';
 
+    private string $host='';
     /**
      * @throws Exception
      */
-    function __construct($key=''){
+    function __construct($key='',$host=''){
         $this->key = $key;
+        $this->host=$host;
         if(file_exists(__DIR__.'/License/License')){
             $this->license = json_decode(file_get_contents(__DIR__.'/License/License'))->License;
         }else{
-            $this->license = License::getNewLicense(host: APP::url());
+            $this->license = License::getNewLicense(host: (($this->host=="")?APP::url():$this->host));
             $lData = '{"License":"'.$this->license.'","Created_at":"'.date("Y-m-d h:i:sa").'"}';
             if(!is_dir(__DIR__.'/License')){
                 mkdir(__DIR__.'/License');
